@@ -1,0 +1,29 @@
+{
+    "name": "react-usesavedcallback",
+    "version": "1.0.0",
+    "description": "useRef and useCallback to work with external JavaScript",
+    "main": "index.js",
+    "scripts": {
+      "deploy": "npm version patch && git add . && git commit && git push && npm publish"
+    },
+    "peerDependencies": {
+      "react": ">16.0.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Audiu/react-useSavedCallback"
+    },
+    "keywords": [
+      "react",
+      "hooks",
+      "useState",
+      "useRef",
+      "useCallback"
+    ],
+    "author": "Mike Goodfellow",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/Audiu/react-useSavedCallback/issues"
+    },
+    "homepage": "https://github.com/Audiu/react-useSavedCallback#readme"
+  }
