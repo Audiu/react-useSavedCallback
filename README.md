@@ -7,11 +7,11 @@ Invoke a callback that is saved from the latest render
 Install with `npm` or `yarn`
 
 ```
-npm i react-useSavedCallback
+npm i react-usesavedcallback
 ```
 
 ```
-yarn add react-useSavedCallback
+yarn add react-usesavedcallback
 ```
 
 
