@@ -18,7 +18,7 @@ yarn add react-useSavedCallback
 Use this function instead of `useCallback` when you are interfacing with external JavaScript (trivial example is `setInterval`).
 
 
-```
+```javascript
 const [a, setA] = useState(1);
 
 const func = useSavedCallback(() => {
@@ -43,7 +43,7 @@ The classic example is `setInterval` built in.
 
 Example:
 
-```
+```javascript
 const [a, setA] = useState(1);
 
 useEffect(() => {
@@ -61,7 +61,7 @@ The callback passed into `setInterval` will be the rendered function at that poi
 It would be nice if you could use the `useCallback` function to update:
 
 
-```
+```javascript
 const [a, setA] = useState(1);
 
 const func = useCallback(() => {
@@ -85,7 +85,7 @@ However, even though you can use this to access the state via the ref to get the
 
 Consider you have a prop passed in, which is a callback function from this child component:
 
-```
+```javascript
 const { parentFunc } = props;
 
 const [a, setA] = useState(1);
@@ -111,7 +111,7 @@ Anyway, wouldn't it be great to just move the ref of the callback? Well, we can!
 
 Enter this hook - this is the entirety of it:
 
-```
+```javascript
 import { useCallback, useEffect, useRef } from 'react';
 
 const useSavedCallback = (callbackFunc, deps) => {
@@ -133,7 +133,7 @@ All we are doing is updating the ref to the callback whenever it changes.
 
 Just use `useSavedCallback` instead of `useCallback`
 
-```
+```javascript
 const [a, setA] = useState(1);
 
 const func = useSavedCallback(() => {
