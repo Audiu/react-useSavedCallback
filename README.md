@@ -1,5 +1,7 @@
 # react-useSavedCallback
 
+[![npm version](https://badge.fury.io/js/react-usesavedcallback.svg)](https://badge.fury.io/js/react-usesavedcallback)
+
 Invoke a callback that is saved from the latest render
 
 ## Usage
